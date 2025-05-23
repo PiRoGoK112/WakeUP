@@ -5,12 +5,16 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Levels");
     }
+
+     public void StartLevel(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }   
 
     public void ExitGame()
     {
-        Debug.Log("Игра закрылась");
         Application.Quit();
     }
 }
