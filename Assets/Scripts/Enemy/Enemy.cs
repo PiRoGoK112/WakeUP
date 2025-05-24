@@ -1,44 +1,106 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
-    public static Enemy Instance { get; private set; }
+    public float moveSpeed = 1.5f;
+    public float detectionRadius = 64f;
+    public float attackRange = 0.8f;
+    public int maxHealth = 3;
 
-    [SerializeField] private float movingSpeed = 5f;
+    public Transform attackPoint;         // Кончик руки врага
+    public LayerMask playerLayer;
 
+    private int currentHealth;
+    private Transform player;
     private Rigidbody2D rb;
 
-    private float minMovingSpeed = 0.1f;
-    private bool isRunning = false;
+    public float attackCooldown = 1.5f;   // Задержка между атаками
+    private float lastAttackTime = -Mathf.Infinity;
 
-    private void Awake()
+    void Start()
     {
-        Instance = this;
         rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        VictoryManager.enemiesAlive++;
     }
 
-    private void FixedUpdate()
+    void Update()
     {
-        HandleMovement();
-    }
+        if (player == null) return;
 
-    private void HandleMovement()
-    {
-        Vector2 inputVector = GameInput.Instance.GetMovementVector();
-        rb.MovePosition(rb.position + inputVector * (movingSpeed * Time.fixedDeltaTime));
+        float distance = Vector2.Distance(transform.position, player.position);
 
-        if (Mathf.Abs(inputVector.x) > minMovingSpeed || Mathf.Abs(inputVector.y) > minMovingSpeed)
+        if (distance < detectionRadius)
         {
-            isRunning = true;
+            MoveTowardsPlayer();
+
+            if (distance < attackRange && Time.time >= lastAttackTime + attackCooldown)
+            {
+                TryAttack();
+                lastAttackTime = Time.time;
+            }
+        }
+    }
+
+    void MoveTowardsPlayer()
+    {
+        Vector2 direction = (player.position - transform.position).normalized;
+        rb.MovePosition(rb.position + direction * moveSpeed * Time.deltaTime);
+
+        // Отзеркаливание по направлению движения
+        if (direction.x != 0)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = direction.x > 0 ? -1f : 1f;
+            transform.localScale = scale;
+        }
+    }
+
+    void TryAttack()
+    {
+        if (attackPoint == null)
+        {
+            Debug.LogWarning("attackPoint не назначен!");
+            return;
+        }
+
+        Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, 0.3f, playerLayer);
+        if (hit)
+        {
+            Debug.Log("Enemy hit player!");
+            hit.GetComponent<PlayerController>()?.TakeDamage(1);
         }
         else
         {
-            isRunning = false;
+            Debug.Log("Enemy tried to attack, but player is out of range.");
         }
     }
 
-    public bool IsRunning()
+    public void TakeDamage(int damage)
     {
-        return isRunning;
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        VictoryManager.enemiesAlive--;
+        Destroy(gameObject);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, 0.3f);
+        }
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }
