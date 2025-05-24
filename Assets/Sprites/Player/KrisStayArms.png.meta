@@ -110,89 +110,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KrisStay_0
+      name: KrisStayArms_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.4364266, y: 0.02152647}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4930b6a32605511459c5fd82d3a69fb7
-      internalID: -1932403390
+      spriteID: e5165a5b41a144140803b99e2e36b301
+      internalID: 618198464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_1
+      name: KrisStayArms_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.4364266, y: 0.02152647}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51ab9e5a9cf02284db18a802021ec7aa
-      internalID: -1864085343
+      spriteID: eee2da07fadf94c4294244f77f797c61
+      internalID: 893111164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_2
+      name: KrisStayArms_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.4364266, y: 0.02152647}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b73cdc2b87a864ca977555d945b746
-      internalID: 1382224729
+      spriteID: 371ac5f5b6f044241b9a7b274ca8972e
+      internalID: -477654051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_3
+      name: KrisStayArms_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.4364266, y: 0.02152647}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41c6e8af9b1a3f04c9b6386906ffcdca
-      internalID: 1368909089
+      spriteID: 0629cbb016c8e8544b8fb27309461575
+      internalID: 885449845
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KrisStay_0: -1932403390
-      KrisStay_1: -1864085343
-      KrisStay_2: 1382224729
-      KrisStay_3: 1368909089
+      KrisStayArms_0: 618198464
+      KrisStayArms_1: 893111164
+      KrisStayArms_2: -477654051
+      KrisStayArms_3: 885449845
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

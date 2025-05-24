@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1dd68ae775bba5647ba507a7b34a2050
+guid: 852d32ba0771b9f4f96f3faff09c9a08
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KrisStay_0
+      name: hero_sword_stay_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa75d2bddb144ce4db675395121d0ce6
-      internalID: -1995482121
+      spriteID: b4705f7ab7b92f84e8daf975c99000ec
+      internalID: 1258237886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_1
+      name: hero_sword_stay_1
       rect:
         serializedVersion: 2
         x: 32
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634690519b8375648addd679d2891b34
-      internalID: 1914677882
+      spriteID: 69a8a07027623f94080abeed3552267a
+      internalID: 77377567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_2
+      name: hero_sword_stay_2
       rect:
         serializedVersion: 2
         x: 64
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d489bdacd952a334cacb688c2618e662
-      internalID: 1713239882
+      spriteID: 0b3aaed558738014097e56af42dd67e6
+      internalID: 1673821129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_3
+      name: hero_sword_stay_3
       rect:
         serializedVersion: 2
         x: 96
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a159a40dff62c4082eaf6422246e3e
-      internalID: -239235794
+      spriteID: a694136bece65b64c8657e4703dbe7bc
+      internalID: 1208601664
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KrisStay_0: -1995482121
-      KrisStay_1: 1914677882
-      KrisStay_2: 1713239882
-      KrisStay_3: -239235794
+      hero_sword_stay_0: 1258237886
+      hero_sword_stay_1: 77377567
+      hero_sword_stay_2: 1673821129
+      hero_sword_stay_3: 1208601664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

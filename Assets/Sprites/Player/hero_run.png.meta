@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1dd68ae775bba5647ba507a7b34a2050
+guid: 335e14c0244c7aa418d4ef99921e9d12
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KrisStay_0
+      name: hero_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa75d2bddb144ce4db675395121d0ce6
-      internalID: -1995482121
+      spriteID: 4fdb70b1ce960b3418361f8bcd38bd9e
+      internalID: -1605542391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_1
+      name: hero_run_1
       rect:
         serializedVersion: 2
         x: 32
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634690519b8375648addd679d2891b34
-      internalID: 1914677882
+      spriteID: d3833dd50669fad45a6a771a5032c4d9
+      internalID: -1796220539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_2
+      name: hero_run_2
       rect:
         serializedVersion: 2
         x: 64
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d489bdacd952a334cacb688c2618e662
-      internalID: 1713239882
+      spriteID: 0baabbbf8ffa9c146992a313619cb0a7
+      internalID: -1031729936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_3
+      name: hero_run_3
       rect:
         serializedVersion: 2
         x: 96
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a159a40dff62c4082eaf6422246e3e
-      internalID: -239235794
+      spriteID: 276ec3c19e930444cb4cca3451c17554
+      internalID: -762009046
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KrisStay_0: -1995482121
-      KrisStay_1: 1914677882
-      KrisStay_2: 1713239882
-      KrisStay_3: -239235794
+      hero_run_0: -1605542391
+      hero_run_1: -1796220539
+      hero_run_2: -1031729936
+      hero_run_3: -762009046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

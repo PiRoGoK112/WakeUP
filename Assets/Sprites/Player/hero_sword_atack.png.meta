@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1dd68ae775bba5647ba507a7b34a2050
+guid: 7d309833095bf014e83cf7c7def501bc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KrisStay_0
+      name: hero_sword_atack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa75d2bddb144ce4db675395121d0ce6
-      internalID: -1995482121
+      spriteID: 0c0d9fc9a38e1df43854e09c306ba94c
+      internalID: 1717852926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_1
+      name: hero_sword_atack_1
       rect:
         serializedVersion: 2
         x: 32
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634690519b8375648addd679d2891b34
-      internalID: 1914677882
+      spriteID: 8560424965fc1d84390dada28272c70d
+      internalID: 1600617129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_2
+      name: hero_sword_atack_2
       rect:
         serializedVersion: 2
         x: 64
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d489bdacd952a334cacb688c2618e662
-      internalID: 1713239882
+      spriteID: 535607ca81caa06468cb2a680f18c7ad
+      internalID: 1947398791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KrisStay_3
+      name: hero_sword_atack_3
       rect:
         serializedVersion: 2
         x: 96
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a159a40dff62c4082eaf6422246e3e
-      internalID: -239235794
+      spriteID: 67f41a4243ffe214db14037fdda4ec24
+      internalID: 1155175342
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KrisStay_0: -1995482121
-      KrisStay_1: 1914677882
-      KrisStay_2: 1713239882
-      KrisStay_3: -239235794
+      hero_sword_atack_0: 1717852926
+      hero_sword_atack_1: 1600617129
+      hero_sword_atack_2: 1947398791
+      hero_sword_atack_3: 1155175342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
